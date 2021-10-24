@@ -4,6 +4,29 @@
     font-family: 'PT Sans', sans-serif;
 }
 
+html,
+body,
+.page-flex-container {
+    height: 100%;
+}
+
+header {
+    height: 75px;
+}
+
+nav.menu-cabecalho {
+    height: 100%;
+}
+
+footer {
+    height: 70px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+
 .page-flex-container{
     background-color: #f8f8fa;
     display: flex;
@@ -56,31 +79,25 @@ li > a:hover {
 
 .main-background {
     background-image: url(img/background.png);
-    height: 500px;
+    background-size: auto 100%;
     display: grid;
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
 }
 
-.container {
+
+.container-outros {
+    background-color: lightgray;
+    opacity: 0.8;
+    max-height: 400px;
+    box-sizing: border-box;
+    text-align: center;
     width: 50%;
     border: 2px solid black;
     margin: 80px auto;
-    background-color: lightgray;
-    opacity: 0.8;
-    text-align: center;
 }
 
-
-.container-sobre{
-    width: 50%;
-    border: 2px solid black;
-    margin: 80px auto;
-    background-color: lightgray;
-    opacity: 0.8;
-    text-align: center;
-}
 
 .introducao:hover {
     color: lightcoral;
@@ -114,7 +131,6 @@ ul {
 
 #portfolio {
     padding: 30px 0;
-    background-image: url(img/background.png);
 }
 
 .projeto{
@@ -128,13 +144,7 @@ ul {
 }
 
 .envelope-projetos {
-    background-color: lightgray;
-    opacity: 0.8;
-    width: 50%;
-    margin: 50px auto;
-    border: 2px solid black;
     padding: 20px;   
-    max-height: 350px;
     overflow-y: scroll;
 }
 
@@ -153,14 +163,8 @@ ul {
 
 
 #contato {
-    width: 50%;
-    border: 2px solid black;
-    margin: 80px auto;
-    background-color: lightgray;
-    opacity: 0.8;
-    text-align: center;
-    max-height: 400px;
     overflow-y: scroll;
+    padding:  20px;
 }
 
 .formulario-contato {
